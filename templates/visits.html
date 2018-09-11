@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block visits %}
+<div class="container">
+    <div class="row"> 
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+        {% if Visits  %}
+                <div class="row border border-secondary mb-2 mt-3 "> 
+                    <div class=col-md-1>
+                       ID 
+                    </div>
+                    <div class=col-md-2>
+                       IP Address: 
+                    </div>
+                    <div class=col-md-3>
+                        Time:
+                    </div>
+                    <div class=col-md-2>
+                        Platform:
+                    </div>
+                    <div class=col-md-2>
+                        Browser:
+                    </div>
+                    <div class=col-md-2>
+                        Version:
+                    </div>
+                </div>
+            {% for a in Visits %}
+                <div class="row border border-primary mb-2 "> 
+                    <div class=col-md-1>
+                        {{a[0]}}
+                    </div>
+                    <div class=col-md-2>
+                        {{a[1]}}
+                    </div>
+                    <div class=col-md-3>
+                        {{a[2]}}
+                    </div>
+                    <div class=col-md-2>
+                        {{a[3]}}
+                    </div>
+                    <div class=col-md-2>
+                        {{a[4]}}
+                    </div>
+                    <div class=col-md-2>
+                        {{a[5]}}
+                    </div>
+                </div>
+            {% endfor  %}
+        {% endif %}
+    </div>
+    <div class="col-md-2 mt-3">
+        <form method="POST" action="{{url_for('logout')}}" >
+            <button type="submit" value="Log Out" class="btn btn-primary">Log Out</button>
+        </form>
+    </div>
+    </div>
+</div>
+{% endblock %}

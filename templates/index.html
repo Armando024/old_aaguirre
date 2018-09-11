@@ -1,0 +1,490 @@
+{% extends "base.html" %}
+{%block about%}
+   
+<div class="jumbotron jumbotron-fluid " style="padding-top:5px; padding-bottom:5px;">
+    <div class="container-fluid" style="text-align:left;">
+        <h1 class="display-4">About Me</h1> 
+    </div>
+</div>
+        
+
+<div class="container">
+    <div class="row">
+        
+        <div id="sxz" class="col-12  col-md-5  text-center text-md-left">
+            <div class="img-div center"  >
+                <img src="{{url_for('static',filename='me.jpg')}}"  />
+            </div>
+        </div>
+        <div class="col-12 shadow p-3  rounded col-md-6">
+
+             <p class="h4 lead"> <b>About: </b> I am a recent graduate from The City College of New York, with a Bachelor of Engineering in Computer Engineering. Experience in web and software development.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am proficent in C++ and python is my second strongest language.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Software development is my passion. Is a job in which I see myself working my entire life because of the constant changes in technology. This means I can expect to always be learning and new challenges<br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feel free to check out some of my projects that i have work in the past. You're also more than welcome to contact me via email or phone below!</p>
+        </div>
+
+    </div>
+    <hr>
+    <div class="row pb-3">
+        <div class="col-12 text-center text-md-left  col-md-1">
+       &nbsp; 
+        </div>
+
+        <div class="col-12 text-center text-md-right  col-md-3 pt-3" >
+            <p class="lead axy"> <b>Languages:</b> </p>
+        </div>
+        <div class="col-12 col-md-7">
+            <div class="row">
+                <div class="col-6  col-md-4 text-center pb-3">
+                    <img src="{{url_for('static',filename='cplusplus.svg')  }}" class="apy">
+                </div>
+                <div class="col-6 col-md-4 text-center pb-3">
+                    <img src="{{url_for('static',filename='csharp.svg')  }}" class="apy">
+                </div>
+                <div class="col-6 col-md-4 text-center pb-3">
+                    <img src="{{url_for('static',filename='pyth.svg')  }}" class="apy">
+                </div>
+                <div class="col-6 col-md-4 text-center pb-3">
+                    <img src="{{url_for('static',filename='javascript.svg')  }}" class="apy">
+                </div>
+                <div class="col-6 col-md-4 text-center pb-3">
+                    <img src="{{url_for('static',filename='c.svg')  }}" class="apy">
+                </div>
+                <div class="col-6 col-md-4 text-center pb-3">
+                    <img src="{{url_for('static',filename='java.svg')  }}" class="apy">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 text-center text-md-left  col-md-1">
+       &nbsp; 
+        </div>
+
+    </div>
+
+        <hr>
+    <div class="row pb-4" >
+        <div class="col-12 col-md-1">
+       &nbsp; 
+        </div>
+
+        <div class="col-12 col-md-3 pt-3 text-center text-md-right" >
+            <p class="lead axy"><b>Technologies:</b> </p>
+        </div>
+        <div class="col-12 col-md-7">
+            <div class="row">
+                <div class="col-6 col-md-3 text-center pb-3">
+                    <img src="{{url_for('static',filename='linux.svg')  }}" class="apy">
+                </div>
+                <div class="col-6 col-md-3 text-center pb-3">
+                    <img src="{{url_for('static',filename='net.svg')  }}" class="apy">
+                </div>
+                <div class="col-6 col-md-3 text-center pb-3">
+                    <img src="{{url_for('static',filename='git.svg')  }}" class="apy">
+                </div>
+                <div class="col-6 col-md-3 text-center pb-3">
+                    <img src="{{url_for('static',filename='bootstrap.svg')  }}" class="apy">
+                </div>
+                <div class="col-6 col-md-3 text-center pb-3">
+                    <img src="{{url_for('static',filename='jquery.svg')  }}" class="apy">
+                </div>
+                <div class="col-6 col-md-3 text-center pb-3">
+                    <img src="{{url_for('static',filename='flask.svg')  }}" class="apy pt-4">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-1">
+       &nbsp; 
+        </div>
+
+
+    </div>
+
+
+        <hr>
+    <div class="row pb-4" >
+        <div class="col-12 col-md-1">
+       &nbsp; 
+        </div>
+
+        <div class="col-12 col-md-3 pt-3 text-center text-md-right" >
+            <p class="lead axy"><b>IDE:</b> </p>
+        </div>
+        <div class="col-12 col-md-7">
+            <div class="row">
+                <div class="col-6 col-md-3 text-center">
+                    <img src="{{url_for('static',filename='vim.svg')  }}" class="apy">
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img src="{{url_for('static',filename='vs.svg')  }}" class="apy">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-1">
+       &nbsp; 
+        </div>
+
+
+    </div>
+
+</div>
+
+{%endblock%}
+{%block projects%}
+<div class="jumbotron jumbotron-fluid " style="padding-top:5px; padding-bottom:5px;">
+    <div class="container-fluid" style="text-align:left;">
+        <h1 class="display-4">Projects</h1> 
+    </div>
+</div>
+<div class="container">
+    <div class="row  proj pb-5">
+       
+        <div class="col-md-4 mb-4 mr-4 offset-md-2 shadow  rounded text-center">
+            <a id="dnns" data-toggle="modal" data-target="#snakegif">
+                        <div class="caption">
+                            <h4>Deep Neural Network Playing Snake</h4>
+                        </div>
+                    <div class="thumbnail">
+                        <img src="{{url_for('static',filename='snake.png')}}" class="img-thumbnail"   style="max-width:40%;vertical-align:middle;" />
+                    </div>
+                        <p class="lead" > A very fun project. In which I used pygame to build the GUI and TensorFlow to build/train the  Neural Network.</p>            
+                        <p class="lead" style="color:blue"> Click here for Video (GIF)</p>
+            </a>
+        </div>
+
+    <div class="col-md-4 mb-4 shadow  rounded text-center"> 
+        <a id="rrw" data-toggle="modal" data-target="#traingif">
+                    <div class="caption">
+                        <h4>Website of a  Rail Road ticket System</h4>
+                    </div>
+                 <div class="thumbnail">
+                    <img src="{{url_for('static',filename='rr.png')}}" class="img-thumbnail"  style="max-width:90%;vertical-align:middle;" />
+                </div>
+                <div class="text-center">
+                    <p class="lead">
+                      A project I work in my database class with a team 4 people. Very fun, as well learn a lot about procedures and triggers in databases that help me make new features to the websites in my internship.  
+                    </p>            
+                        <p class="lead" style="color:blue"> Click here for Video (GIF)</p>
+                </div>
+    </a>
+    </div>
+    
+    <div class="col-md-4 mb-4 mr-4 mt-2 shadow rounded  offset-md-2 " > 
+        <a id="calid" data-toggle="modal" data-target="#calgif">
+                <div class="text-center">
+                    <div class="caption">
+                        <h4>Algorithmic Calendar</h4>
+                    </div>
+                 <div class="thumbnail">
+                    <img src="{{url_for('static',filename='calendar.png')}}" class="img-thumbnail" style="max-width:90%;vertical-align:middle;" />
+                </div>
+                <div class="text-center">
+                    <p class="lead">
+This is one of my most insightful projects into programming. As it taught me how registers, memory, and computer architecture work in the low-level. 
+                    </p>            
+                        <p class="lead" style="color:blue"> Click here for Video (GIF)</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-4 mb-4 mr-4 shadow  rounded" > 
+        <a id="envSim" data-toggle="modal" data-target="#envgif">
+                <div class="text-center">
+                    <div class="caption">
+                        <h4>Abstract Environment Simulation</h4>
+                    </div>
+                 <div class="thumbnail">
+                    <img src="{{url_for('static',filename='env.png')}}"  class="img-thumbnail" style="max-width:50%;vertical-align:middle;" />
+                </div>
+                <div class="text-center">
+                    <p class="lead">
+A project for my software design class where I work in a team of 3.The project simulates an environment, where the carnivores eat the herbivores and the herbivores eats the plants. 
+                    </p>            
+                        <p class="lead" style="color:blue"> Click here for Video (GIF)</p>
+                </div>
+            </div>
+    </a>
+    </div>
+
+    <div class="col-md-2" > 
+        &nbsp;
+    </div>
+</div>
+</div>
+<!--snake gif modal -->
+    <div class="modal fade" id="snakegif" role="dialog">
+        <div class="modal-dialog modal-lg">  
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="caption">
+                        <a href="https://github.com/Armando024/Snake"><h3>Deep Neural Network Playing Snake</h3></a>
+                            <div style="text-align:left;" >Python TensorFlow</div>
+                     </div>
+                </div>
+                <div class="modal-body"> 
+                    <div class="row justify-content-center text-center">
+                        <div class="col-sm-12 col-md-12 text-center">
+                            <div class="thumbnail">
+                                <img src="{{url_for('static',filename='snake.gif')}}"  style="max-width:50%;" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--train modal -->
+
+    <div class="modal fade" id="traingif" role="dialog">
+        <div class="modal-dialog modal-lg">  
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="caption">
+                        <a href="https://github.com/jamesw8/RailroadSystem"><h3>Rail Road System</h3></a>
+                        <div >Python Flask MariaDB</div>
+                    </div>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="thumbnail">
+                        <img src="{{url_for('static',filename='train.gif')}}" class="img-fluid"  />
+                    </div>
+                </div>  
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--calendar modal -->
+        <div class="modal fade" id="calgif" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="caption">
+                            <a href=" https://github.com/Armando024/Assembly_Language "><h3>Calender Assemble in Assembly</h3></a>
+                            <div style="text-align:left;" >Assembly Language 8086</div>
+                        </div>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="thumbnail">
+                            <img src="{{url_for('static',filename='cal.gif')}}" class="img-fluid"  />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--Env modal -->
+        <div class="modal fade" id="envgif" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="caption">
+                        <a href="https://github.com/Armando024/evn_simulation"><h3>Environment Simulation</h3></a>
+                        <div style="text-align:left;" >Java</div>
+                    </div>
+                        </div>
+                            <div class="modal-body text-center">
+                                <div class="thumbnail">
+                                    <img src="{{url_for('static',filename='env.gif')}}" class="img-fluid"  />
+                                    
+                                </div>
+                            </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+{%endblock%}
+{%block experience%}
+
+<div class="jumbotron jumbotron-fluid " style="padding-top:5px; padding-bottom:5px;">
+    <div class="container-fluid" style="text-align:left;">
+        <h1 class="display-4">Experience</h1> 
+    </div>
+</div>
+
+
+<div class="container">
+<div  class="row ">
+    <div class="col-sm-12 col-md-12" >
+        <div class="card">
+            <div class="card-header"> <h2>Software Developer Intern-New York City Department of Transportation </h2> </div>
+            <div class="card-body">
+        <ul>
+            <li>
+<p class="lead">Building and maintaining an internal web based application. Used for requesting document translations and administrators to manage the translated documents. 
+  </p>
+            </li>
+            <ul>
+                <li class="lead">Using .NET 4.0, MSSQL, BootStrap 4, and JQuery,</li>
+            </ul>
+            <li> 
+<p class="lead"> Exposure to enterprise application development, testing, deployment and support while being provided guidance on industry best practices.  
+</p>
+           </li>
+            <li>
+<p class="lead"> Work with users, administrators, and designers to improve the web based application and a SharePoint website.      
+</p>
+            </li>
+            <li class="lead">Implemented Search features, data fields, improved User Interface and much more.
+            </li>
+            <ul>
+                <li class="lead"> Search requests by translated language, user, ID, dates....</li>
+            </ul>
+            <li class="lead"> Created custom (C#) self-validating web controls and implemented client validation.</li>
+        </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    </br>
+<div  class="row ">
+    <div class="col-sm-12 col-md-12" >
+        <div class="card">
+            <div class="card-header"> <h2>Software Engineer Intern-Architectronics</h2> </div>
+            <div class="card-body">
+        <ul>
+            <li>
+<p class="lead">Made five visualizing applications with JavaScript (P5JS).
+  </p>
+            </li>
+            <ul>
+                <li class="lead">A video recording widget that allowed you to change filters.
+</li>
+<li class="lead"> Implemented interactive analyzer of “right triangles”.</li> 
+<li class="lead"> Using Blockly API, created simple interactive tool for kids to learn programming.</li> 
+            </ul>
+            <li> 
+<p class="lead">The applications were aim for middle school students to understand math concepts
+</p>
+           </li>
+        </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    </br>
+<div  class="row ">
+    <div class="col-sm-12 col-md-12" >
+       
+        <div class="card">
+            <div class="card-header"> <h2>Teacher Aid-The New York Academy of Science </h2> </div>
+    
+            <div class="card-body">
+        <ul>
+            <li>
+                <p class="lead">Taught a STEM curriculum to a middle school class.
+                </p>
+            </li>
+            <li>
+                <p class="lead">Inspired and motivated students to pursued STEM careers. As well mentor and tutored them.  
+                </p>
+            </li>
+        </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    </br>
+    <script>
+        $('#dnns').click(function(e){
+            e.preventDefault();
+            $.ajax({
+            url:"logdnns",
+            type:"post",
+            dataType:"json",
+            data:{click:"true"},
+            success:function(result){
+             return;
+            }
+            });
+        });
+
+        $('#rrw').click(function(e){
+            e.preventDefault();
+            $.ajax({
+            url:"logrr",
+            type:"post",
+            dataType:"json",
+            data:{click:"true"},
+            success:function(result){
+             return;
+            }
+            });
+        });
+
+        $('#calid').click(function(e){
+            e.preventDefault();
+            $.ajax({
+            url:"logcal",
+            type:"post",
+            dataType:"json",
+            data:{click:"true"},
+            success:function(result){
+             return;
+            }
+            });
+        });
+
+        $('#envSim').click(function(e){
+            e.preventDefault();
+            $.ajax({
+            url:"logSim",
+            type:"post",
+            dataType:"json",
+            data:{click:"true"},
+            success:function(result){
+             return;
+            }
+            });
+        });
+    </script>
+
+
+{%endblock%}
+{%block contact%}
+
+<div class="jumbotron jumbotron-fluid " style="padding-top:5px; padding-bottom:5px;">
+    <div class="container-fluid" style="text-align:left;">
+        <h1 class="display-4">Contact</h1> 
+    </div>
+</div>
+
+
+<div class="row" >
+    <div class="row justify-content-center col-md-12 col-sm-12">
+        <div><i class="fas fa-mobile"></i> (917) 569 2924</div>
+    </div> 
+    <div class="row justify-content-center  col-md-12 col-sm-12">
+        <div><i class="fas fa-envelope"></i> <a href="mailto:armando024@live.com" target="_top">Armando024@live.com</a></div>
+    </div>
+</div>
+<div class="row justify-content-center" style="padding-bottom:80px">
+    <div class="col-12 text-center col-sm-6  col-md-6 text-md-right text-sm-right"> 
+        <div > <a href="https://github.com/Armando024" ><i class="fab fa-github fa-5x"></i></a></div>
+    </div>
+    <div class="col-12 text-center col-sm-6  col-md-6 text-md-left text-sm-left">
+       <div><a href="https://linkedin.com/in/armando-aguirre-0971459b" ><i class="fab fa-linkedin fa-5x"></i></a></div>
+    </div>
+        
+    
+    
+</div>
+
+{%endblock%}
+ 
+
+
+
+

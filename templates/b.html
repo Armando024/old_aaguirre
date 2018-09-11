@@ -1,0 +1,91 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.10/dist/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.10/dist/semantic.min.js"></script>
+    <title> Armando's Website</title>
+<style>
+.ui.menu {
+border:0px;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+</style>
+<script>
+  $(document)
+    .ready(function() {
+
+      $('.main.menu').visibility({
+        type: 'fixed'
+      });
+      $('.main.menu  .ui.dropdown').dropdown({
+        on: 'hover'
+      });
+    });
+  </script>
+
+</head>
+<body >
+        <div class="ui borderless main menu ">
+            <div class="ui borderless  text container">
+                <div class="borderless header item"> Armando Aguirre</div>
+                        <a id="home" class="borderless item" href="{{url_for('index')}} ">Home</a>  
+                        <a id="software" class="borderless item" href="{{url_for('software') }} " >Software</a>
+                        <a id="hardware" class="borderless item" href="{{url_for('hardware') }}" >Hardware</a>
+                        <a id="about" class="borderless item" href="{{url_for('about') }}" >About</a>
+                        <a id="resume" class="borderless item" href="{{url_for('resume') }}">Resume</a>
+                </div>
+             </div>
+           </div>
+        <div id="about" class="ui text container">
+        {%block about%}
+        {%endblock%}
+        </div>
+         <div id="projects" class="ui text container">
+        {%block projects%}
+        {%endblock%}
+        </div>
+ <div id="experience" class="ui text container">
+        {%block experience%}
+        {%endblock%}
+        </div>
+<div id="contact" class="ui text container">
+        {%block contact%}
+        {%endblock%}
+        </div>
+
+
+
+
+          <script> 
+    if ("{{request.path}}" == "{{url_for('index')}}") {
+       // document.getElementById('home').classlist.add('active');
+        document.getElementById("home").style.backgroundColor = "#30496C";
+    }
+    if ("{{request.path}}" == "{{url_for('software')}}") {
+       
+        document.getElementById("software").style.backgroundColor = "#30496C";
+    }
+   if ("{{request.path}}" == "{{url_for('hardware')}}") {
+     
+        document.getElementById("hardware").style.backgroundColor = "#30496C";
+    }
+    if ("{{request.path}}" == "{{url_for('about')}}") {
+   
+        document.getElementById("about").style.backgroundColor = "#30496C";
+    }
+if ("{{request.path}}" == "{{url_for('resume')}}") {
+  
+        document.getElementById("resume").style.backgroundColor = "#30496C";
+    }
+</script>
+</body>
+
+</html>

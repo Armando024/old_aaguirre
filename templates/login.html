@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+
+{% block visits %}
+
+
+<div class="container">
+    <div class="row"> 
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+        <form method="post" action="{{url_for('login')}}">
+            <div class="form-group">
+                <label class="lead"> Enter Key: </label>
+                <input type="password" name="password" placeholder="Pass-Key" class="form-control" required>
+            </div>
+            <button type="submit" value="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div class="col-md-4">
+    </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+
